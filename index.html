@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="icon" href="assets/icons/weather.jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1><img id="logo" src="assets/icons/weather.jpeg"> Weather Forecast</h1>
+
+    <div class="search-box">
+      <input type="text" id="locationInput" placeholder="Enter city name" />
+      <button id="searchButton">Get Weather</button>
+    </div>
+
+    <div id="weatherDisplay" class="weather-info hidden">
+      <h2 id="cityName"></h2>
+      <p id="weatherDescription"></p>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+      <p id="windSpeed"></p>
+      <p id="precipitation"></p>
+    </div>
+
+    <div id="errorDisplay" class="error-message hidden">
+      <p>Could not retrieve weather information. Please try again.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
